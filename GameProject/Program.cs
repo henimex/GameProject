@@ -14,6 +14,9 @@ namespace GameProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Engin Demiroğ'a Bu Eğitim Fırsatını Sunduğu İçin Sonsuz Teşekkürler.");
+            Console.WriteLine("Endless Thanks to Engin Demiroğ for Presenting This Educational Opportunity.");
+
             ILogService logManager = new BaseLogManager();
             IGamerService gamerManager = new GamerRegisterManager(new AMernisServiceAdapter(), logManager);
             ICampaignService campaignManager = new CampaignStartManager();
